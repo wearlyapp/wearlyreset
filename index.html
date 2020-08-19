@@ -17,7 +17,7 @@
       </div>
       <button type="submit" onclick="resetPassword()" class="btn color-change-back">Restablecer</button>
     </form>
-    <h6 class="main-text fade-in" id="error">""</h6>
+    <h6 class="main-text fade-in" id="error"></h6>
 
 
     <script>
@@ -28,7 +28,7 @@
 
     const urlParams = new URLSearchParams(queryString);
 
-    const codigo = urlParams.get('code');
+    const codigo = urlParams.get('oobCode');
 
     function resetPassword() {
 
