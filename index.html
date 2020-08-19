@@ -32,6 +32,7 @@
 
     function resetPassword() {
 
+      console.log(newPassword);
       firebase.auth().confirmPasswordReset(codigo, newPassword)
         .then(function() {
           document.getElementById("error").textContent = "contraseña restablecida";
