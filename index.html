@@ -11,11 +11,11 @@
   <body>
 
     <h1 class="main-title fade-in color-change-2x">"restablecer contraseña"</h1>
-    <form>
+    <form onsubmit="return false">
       <div class="form-group">
     <input class="form-control" id="newPassword" placeholder='"contraseña"'>
       </div>
-      <button type="button" onclick="resetPassword()" class="btn color-change-back">Restablecer</button>
+      <button type="submit" onclick="resetPassword()" class="btn color-change-back">Restablecer</button>
     </form>
     <h6 class="main-text fade-in" id="error"></h6>
 
